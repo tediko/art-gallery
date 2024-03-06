@@ -1,0 +1,11 @@
+{
+  "name": "modern-art-gallery-website",
+  "version": "1.0.0",
+  "description": "Art gallery website challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch src/sass/main.scss dist/styles/css/style.css"
+  },
+  "author": "tediko",
+  "license": "ISC"
+}

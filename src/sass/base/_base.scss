@@ -1,0 +1,7 @@
+@use '../utilities/' as *;
+
+body {
+    min-height: 100vh;
+    font-family: $ff-primary;
+    background-color: $bg-primary;
+}

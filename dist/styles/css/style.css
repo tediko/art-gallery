@@ -1,0 +1,157 @@
+/* Base */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd, ul {
+  margin-block-end: 0;
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul, ol {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Colors */
+/* Backgrounds */
+/* Typography */
+/* Media query breakpoints */
+/* Mixin to manage responsive breakpoints */
+/* Headings */
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsl(0, 0%, 8%);
+}
+.heading--xl {
+  font-size: clamp(3.75rem, 2.727rem + 4.364vw, 6rem);
+  line-height: 1.09;
+}
+@media (min-width: 48.0625rem) {
+  .heading--xl {
+    line-height: 0.916;
+  }
+}
+.heading--l {
+  font-size: clamp(3.125rem, 2.557rem + 2.424vw, 4.375rem);
+  line-height: 0.9;
+}
+@media (min-width: 64rem) {
+  .heading--l {
+    line-height: 1;
+  }
+}
+.heading--m {
+  font-size: clamp(3.125rem, 2.841rem + 1.212vw, 3.75rem);
+  line-height: 0.9;
+}
+@media (min-width: 64rem) {
+  .heading--m {
+    line-height: 0.83;
+  }
+}
+.heading--s {
+  font-size: clamp(2rem, 1.886rem + 0.485vw, 2.25rem);
+  line-height: 1;
+}
+.heading--white {
+  color: hsl(0, 0%, 100%);
+}
+.heading--yellow {
+  color: hsl(24, 56%, 63%);
+}
+
+/* Body text */
+.text {
+  color: hsl(0, 0%, 27%);
+}
+.text--m {
+  font-size: clamp(1.125rem, 1.011rem + 0.485vw, 1.375rem);
+  line-height: 1.55;
+}
+@media (min-width: 64rem) {
+  .text--m {
+    line-height: 1.45;
+  }
+}
+.text--s {
+  font-size: clamp(1rem, 0.943rem + 0.242vw, 1.125rem);
+  line-height: 1.625;
+}
+@media (min-width: 64rem) {
+  .text--s {
+    line-height: 1.55;
+  }
+}
+.text--white {
+  color: hsl(0, 0%, 100%);
+}
+.text--black {
+  color: hsl(0, 0%, 8%);
+}
+
+/* Screen readers only! */
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/*# sourceMappingURL=style.css.map */

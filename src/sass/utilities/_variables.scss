@@ -1,0 +1,23 @@
+/* Colors */
+$c-yellow-sand: hsl(24, 56%, 63%);
+$c-black: hsl(0, 0%, 8%);
+$c-black-light: hsl(0, 0%, 27%);
+$c-white: hsl(0, 0%, 100%);
+
+/* Backgrounds */
+$bg-primary: hsl(0, 0%, 100%);
+$bg-secondary: hsl(0, 0%, 8%);
+$bg-tertiary: hsl(24, 56%, 63%);
+
+/* Typography */
+$ff-primary: "Outfit", sans-serif;
+$ff-secondary: "Big Shoulders Display", sans-serif;
+
+/* Media query breakpoints */
+$breakpoints: (
+    xs: 23.5rem,
+    sm: 30.0625rem,
+    md: 48.0625rem,
+    lg: 64rem,
+    xlg: 75rem
+);
