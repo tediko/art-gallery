@@ -1,0 +1,89 @@
+@use '../utilities' as *;
+
+/* Header */
+.header {
+    margin-bottom: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
+
+    @include breakpoint('xlg') {
+        background: linear-gradient(to right, $c-black 0 50%, $c-white 50% 100%);
+    }
+
+    &__container {
+        @include breakpoint('md') {
+            display: grid;
+            grid-template: "image content" / 1fr 1fr;
+        }
+
+        @include breakpoint('xlg') {
+            grid-template: 
+            "bg image content" 11.8125rem
+            "bg image content" auto / 287px 4fr 3fr;
+            max-width: 1110px;
+            margin: 0 auto;
+        }
+    }
+
+    &__image-wrapper {
+        @include breakpoint('md') {
+            grid-area: image / image / content / content;
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        @include breakpoint('md') {
+            width: unset;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem 0 1rem;
+
+        @include breakpoint('md') {
+            grid-area: content;
+            align-self: center;
+            gap: 3rem;
+            padding: 0;
+        }
+
+        @include breakpoint('xlg') {
+            grid-row: 2;
+            align-self: start;
+            gap: 4rem;
+        }
+    }
+
+    &__title {
+        white-space: pre-wrap;
+
+        &--mobile {
+            @include breakpoint('xlg') {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            display: none;
+
+            @include breakpoint('xlg') {
+                display: block;
+                grid-area: bg / bg / image / image;
+                grid-row: 2;
+                mix-blend-mode: exclusion;
+                color: $c-white;
+            }
+        }
+    }
+
+    &__desc {
+        max-width: 31.25rem;
+
+        @include breakpoint('md') {
+            max-width: 21.875rem;
+        }
+    }
+}

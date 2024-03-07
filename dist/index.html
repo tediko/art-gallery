@@ -13,7 +13,26 @@
 </head>
 <body>
 
-  <h1>Modern Art Gallery</h1>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title header__title--desktop heading heading--xl">Modern&NewLine;Art Gallery</h1>
+      <picture class="header__image-wrapper">
+        <source media="(min-width: 69.375rem)" srcset="./assets/desktop/image-hero.jpg">
+        <source media="(min-width: 48.0625rem)" srcset="./assets/tablet/image-hero.jpg">
+        <img class="header__image" src="./assets/mobile/image-hero@2x.jpg" alt="A woman and a man looking at a large monochrome sketch of an elderly woman in an art gallery">
+      </picture>
+      <div class="header__content">
+        <h1 class="header__title header__title--mobile heading heading--xl">Modern&NewLine;Art Gallery</h1>
+        <p class="header__desc text text--m">The arts in the collection of the Modern Art Gallery all started 
+          from a spark of inspiration. Will these pieces inspire you? Visit 
+          us and find out.</p>
+        <nav class="header__nav" aria-label="main">
+          <a href="#location" class="header__link button button--right">Our location</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
 </body>
 </html>
