@@ -4,6 +4,8 @@
 /* Headings */
 .heading {
     font-family: $ff-secondary;
+    font-weight: 900;
+    text-transform: uppercase;
     color: $c-black;
 
     &--xl {
