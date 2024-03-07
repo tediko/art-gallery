@@ -2,8 +2,6 @@
 
 /* Buttons */
 .button {
-    $root: &; 
-
     position: relative;
     display: inline-block;
     background-color: $c-black;
