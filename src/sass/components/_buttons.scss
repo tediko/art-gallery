@@ -1,0 +1,75 @@
+@use '../utilities' as *;
+
+/* Buttons */
+.button {
+    $root: &; 
+
+    position: relative;
+    display: inline-block;
+    background-color: $c-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $ff-secondary;
+    font-weight: 750;
+    font-size: 1.25rem;
+    letter-spacing: 0.2275rem;
+    color: $c-white;
+    padding: 1.5rem 2rem;
+    transition: background-color 400ms ease-in-out;
+
+    &:focus-visible {
+        outline: 3px dashed $c-yellow-sand;
+        outline-offset: 3px;
+        background-color: $c-yellow-sand;
+
+        &::before {
+            width: 80px;
+            background-color: $c-black;
+        }
+    }
+
+    @include breakpoint('md') {
+        &:hover {
+            background-color: $c-yellow-sand;
+
+            &::before {
+                width: 80px;
+                background-color: $c-black;
+            }
+        }
+    }
+    
+    &--left, &--right {
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            width: 56px;
+            height: 100%;
+            background-color: $c-yellow-sand;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 
+                background-color 400ms ease-in-out,
+                width 350ms ease-in-out;
+        }
+    }
+    
+    &--left {
+        padding: 1.5rem 2.1875rem 1.5rem 5.5rem;
+
+        &::before {
+            left: 0;
+            background-image: url('../../assets/shared/icon-arrow-left.svg');
+        }
+    }
+    
+    &--right {
+        padding: 1.5rem 5.6875rem 1.5rem 2rem;
+
+        &::before {
+            right: 0;
+            background-image: url('../../assets/shared/icon-arrow-right.svg');
+        }
+    }
+}
