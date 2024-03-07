@@ -55,8 +55,12 @@
     font-weight: 300;
 
     &--m {
-        font-size: clamp(1.125rem, 1.011rem + 0.485vw, 1.375rem);
+        font-size: 1.125rem;
         line-height: 1.55;
+
+        @include breakpoint('md') {
+            font-size: clamp(1.125rem, 0.679rem + 0.928vw, 1.375rem);
+        }
 
         @include breakpoint('lg') {
             line-height: 1.45;
