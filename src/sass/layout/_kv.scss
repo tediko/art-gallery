@@ -1,0 +1,96 @@
+@use '../utilities' as *;
+
+/* Key Visual */
+.kv {
+    $root: &;
+    display: grid;
+    gap: clamp(1rem, -0.561rem + 3.248vw, 1.875rem);
+    padding-block: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
+
+    @media (min-width: 40rem) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint('md') {
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-template-rows: 400px 313px 377px;
+    }
+
+    &__image-wrapper {
+        &--1 {
+            @include breakpoint('md') {
+                grid-area: 1 / span 2;
+            }
+        }
+
+        &--2 {
+            @include breakpoint('md') {
+                grid-area: span 2 / span 2 / auto;
+            }
+        }
+
+        &--3 {
+            @media (min-width: 40rem) {
+                grid-area: 2 / span 2;
+            }
+
+            @include breakpoint('md') {
+                grid-area: 2 / 3;
+            }
+        }
+    }
+
+    &__image {
+        @media (min-width: 40rem) {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(1.5rem, 0.608rem + 1.856vw, 2rem);
+
+        &--top {
+            padding: 0.875rem 0 1rem 0;
+
+            @media (min-width: 40rem) {
+                padding: 0;
+                grid-area: 1 / 1
+            }
+
+            #{$root}__title {
+                @media (min-width: 40rem) {
+                    max-width: 18.75rem;
+                }
+        
+                @include breakpoint('lg') {
+                    white-space: unset;
+                }
+            }
+
+            #{$root}__desc {
+                max-width: 28.125rem;
+
+                @include breakpoint('md') {
+                    max-width: 21.875rem;
+                }
+            }
+        }
+
+        &--bottom {
+            background-color: $c-black;
+            padding: 3rem 1.5rem;
+
+            #{$root}__desc {
+                max-width: 22rem;
+            }
+        }
+    }
+
+    &__title {
+        white-space: pre-wrap;
+    }
+}
