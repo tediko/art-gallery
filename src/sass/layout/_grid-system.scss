@@ -1,0 +1,19 @@
+.grid-system {
+    $gap: clamp(1rem, -0.428rem + 6.091vw, 2.5rem);
+    $full: minmax($gap, 1fr);
+    $content: min(69.375rem, 100% - $gap * 2);
+
+    display: grid;
+    grid-template-columns: 
+        [full-start] $full
+        [content-start] $content [content-end]
+        $full [full-end];
+
+    & > *:not(.full) {
+        grid-column: content;
+    }
+
+    &--full {
+        grid-column: full;
+    }
+}
