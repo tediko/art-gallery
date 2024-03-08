@@ -9,7 +9,7 @@
         [content-start] $content [content-end]
         $full [full-end];
 
-    & > *:not(.full) {
+    & > *:not(&--full) {
         grid-column: content;
     }
 
