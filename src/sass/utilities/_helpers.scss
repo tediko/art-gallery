@@ -95,3 +95,22 @@
 	width: 1px !important;
 	white-space: nowrap !important;
 }
+
+/* Skip to content link */
+.skip-to-content {
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    padding: 1.5rem 5rem;
+    transform: translateX(-200%);
+    background: $c-white;
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
+    text-decoration: none;
+    outline: 3px dashed $c-yellow-sand;
+    transition: transform 350ms ease-in-out;
+    z-index: 999;
+
+    &:focus-visible {
+        transform: translateX(0);
+    }
+}
