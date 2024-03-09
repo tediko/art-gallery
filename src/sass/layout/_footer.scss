@@ -1,0 +1,98 @@
+@use '../utilities' as *;
+
+/* Footer */
+.footer {
+    $root: &;
+
+    background-color: $c-black;
+    padding-block: clamp(3rem, 2.091rem + 3.879vw, 5rem);
+    margin-top: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
+
+    &--light {
+        background-color: $c-yellow-sand;
+
+        #{$root}__logo-link {
+            &:focus-visible {
+                outline-color: $c-black;
+            }
+        }
+
+        #{$root}__socials-link {
+            &:focus-visible {
+                outline-color: $c-black;
+                color: $c-white;
+            }
+        }
+
+        #{$root}__socials-link {
+            color: $c-black;
+
+            @include breakpoint('md') {    
+                &:hover {
+                    color: $c-white;
+                }
+            }
+        }
+    }
+
+    &__container {
+        display: grid;
+        gap: 2.375rem;
+        padding-inline: 1rem;
+
+        @include breakpoint('md') {
+            grid-template-columns: 
+                minmax(max-content, clamp(12.5rem, -6.348rem + 39.216vw, 18.75rem))
+                1fr
+                auto;
+            gap: 0;
+            padding-inline: 0;
+        }
+    }
+
+    &__logo-link {
+        place-self: start; /* important for focus-visible so element doesn't take full column width */
+
+        &:focus-visible {
+            outline: 3px dashed $c-yellow-sand;
+            outline-offset: 3px;
+        }
+    }
+
+    &__logo {
+        width: clamp(111px, -2.298rem + 19.216vw, 160px);
+    }
+
+    &__info {
+        max-width: 22rem;
+
+        @include breakpoint('lg') {
+            max-width: 26.875rem;
+        }
+    }
+
+    &__socials-list {
+        display: flex;
+        gap: 0.625rem;
+    }
+
+    &__socials-link {
+        text-decoration: none;
+        color: $c-white;
+        padding-inline: 0.3125rem;
+        font-size: 1.25rem;
+
+        &:focus-visible {
+            outline: 3px dashed $c-yellow-sand;
+            color: $c-yellow-sand;
+        }
+
+        @include breakpoint('md') {
+            transition: color 350ms ease-in-out;
+
+            &:hover {
+                color: $c-yellow-sand;
+            }
+        }
+    }
+}
