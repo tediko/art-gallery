@@ -10,6 +10,7 @@
 
     &--light {
         background-color: $c-yellow-sand;
+        margin-top: 0;
 
         #{$root}__logo-link {
             &:focus-visible {
