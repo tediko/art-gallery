@@ -1,0 +1,57 @@
+@use '../utilities' as *;
+
+/* Location */
+.location {
+    &__map {
+        height: 550px;
+
+        @include breakpoint('md') {
+            height: 600px;
+        }
+
+        &[data-state="no-js"] { // Hidde map container when js has not loaded
+            display: none;
+        }
+    }
+
+    &__content {
+        background-color: $c-black;
+    }
+
+    &__content-container {
+        display: grid;
+        gap: 3rem;
+        padding-block: 
+        clamp(3rem, 1.409rem + 6.788vw, 6.5rem)
+        clamp(3.5rem, 1.455rem + 8.727vw, 8rem);
+
+        @include breakpoint('md') {
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+    }
+
+    &__title {
+        @include breakpoint('md') {
+            white-space: pre-wrap;
+        }
+    }
+
+    &__info {
+        display: grid;
+        gap: clamp(1.25rem, 0.909rem + 1.455vw, 2rem);
+    }
+
+    &__address-title, &__address-desc {
+        display: block;
+        font-style: normal;
+    }
+
+    &__address-title {
+        margin-bottom: clamp(1.25rem, 1.136rem + 0.485vw, 1.5rem);
+    }
+
+    &__address-desc {
+        white-space: pre-wrap;
+    }
+}
