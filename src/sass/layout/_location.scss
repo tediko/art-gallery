@@ -4,6 +4,10 @@
 .location {
     &__map {
         height: 550px;
+        
+        .leaflet-tile {
+            filter: grayscale(100);
+        }
 
         @include breakpoint('md') {
             height: 600px;

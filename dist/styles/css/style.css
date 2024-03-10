@@ -423,6 +423,9 @@ body {
 .location__map {
   height: 550px;
 }
+.location__map .leaflet-tile {
+  filter: grayscale(100);
+}
 @media (min-width: 48.0625rem) {
   .location__map {
     height: 600px;

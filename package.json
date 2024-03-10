@@ -4,8 +4,16 @@
   "description": "Art gallery website challenge",
   "main": "index.js",
   "scripts": {
-    "sass-watch": "sass --watch src/sass/main.scss dist/styles/css/style.css"
+    "sass-watch": "sass --watch src/sass/main.scss dist/styles/css/style.css",
+    "build": "webpack"
   },
   "author": "tediko",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
 }
