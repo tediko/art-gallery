@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/css/style.css">
   <script src="https://kit.fontawesome.com/b961f1cbcd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Art gallery | Location</title>
 </head>
@@ -19,7 +20,7 @@
     
     <!-- Location -->
     <main class="location grid-system--full">
-      <section class="location__map" data-state="ready" data-map></section>
+      <section id="map" class="location__map" data-state="ready" data-map></section>
       <section class="location__content grid-system">
         <div class="location__content-container">
           <h1 class="location__title heading heading--l heading--white">Our &NewLine;location</h1>
@@ -65,5 +66,6 @@
 
   </div>
 
+  <script src="./index.js"></script>
 </body>
 </html>
