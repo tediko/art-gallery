@@ -443,6 +443,11 @@ body {
 .kv__content--bottom .kv__desc {
   max-width: 29ch;
 }
+@media (min-width: 64rem) {
+  .kv__content--bottom .kv__desc {
+    max-width: 23ch;
+  }
+}
 .kv__title {
   white-space: pre-wrap;
 }
