@@ -63,7 +63,7 @@
 
             #{$root}__title {
                 @media (min-width: 40rem) {
-                    max-width: 18.75rem;
+                    max-width: 7ch;
                 }
         
                 @include breakpoint('lg') {
@@ -72,10 +72,10 @@
             }
 
             #{$root}__desc {
-                max-width: 28.125rem;
+                max-width: 36ch;
 
                 @include breakpoint('md') {
-                    max-width: 21.875rem;
+                    max-width: 22ch;
                 }
             }
         }
@@ -85,7 +85,7 @@
             padding: 3rem 1.5rem;
 
             #{$root}__desc {
-                max-width: 22rem;
+                max-width: 29ch;
             }
         }
     }

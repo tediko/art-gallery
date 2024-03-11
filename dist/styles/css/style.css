@@ -408,7 +408,7 @@ body {
 }
 @media (min-width: 40rem) {
   .kv__content--top .kv__title {
-    max-width: 18.75rem;
+    max-width: 7ch;
   }
 }
 @media (min-width: 64rem) {
@@ -417,11 +417,11 @@ body {
   }
 }
 .kv__content--top .kv__desc {
-  max-width: 28.125rem;
+  max-width: 36ch;
 }
 @media (min-width: 48.0625rem) {
   .kv__content--top .kv__desc {
-    max-width: 21.875rem;
+    max-width: 22ch;
   }
 }
 .kv__content--bottom {
@@ -429,7 +429,7 @@ body {
   padding: 3rem 1.5rem;
 }
 .kv__content--bottom .kv__desc {
-  max-width: 22rem;
+  max-width: 29ch;
 }
 .kv__title {
   white-space: pre-wrap;
