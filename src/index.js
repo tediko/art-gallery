@@ -7,7 +7,8 @@ document.querySelector('#map').dataset.state = 'ready';
 
 // Instantiates a map object with options
 let map = L.map('map', {
-    center: ([41.48041, -71.31091])
+    center: ([41.48041, -71.31091]),
+    zoomControl: false
 }).setView([41.48041, -71.31091], 18);
 
 // Creates an icon instance with the given options

@@ -237,13 +237,20 @@ body {
 
 /* Layout */
 /* Header */
-.header {
+.header--primary {
   margin-bottom: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
 }
 @media (min-width: 75rem) {
-  .header {
+  .header--primary {
     background: linear-gradient(to right, hsl(0, 0%, 8%) 0 50%, hsl(0, 0%, 100%) 50% 100%);
   }
+}
+.header--secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 @media (min-width: 48.0625rem) {
   .header__container {
@@ -321,15 +328,24 @@ body {
   }
 }
 
+/* Grid system */
 .grid-system {
   display: grid;
   grid-template-columns: [full-start] minmax(clamp(1rem, -0.428rem + 6.091vw, 2.5rem), 1fr) [content-start] min(69.375rem, 100% - clamp(1rem, -0.428rem + 6.091vw, 2.5rem) * 2) [content-end] minmax(clamp(1rem, -0.428rem + 6.091vw, 2.5rem), 1fr) [full-end];
 }
-.grid-system > *:not(.grid-system--full) {
+.grid-system > *:not(.grid-system--full, .grid-system--fluid) {
   grid-column: content;
 }
 .grid-system--full {
   grid-column: full;
+}
+.grid-system--fluid {
+  grid-column: full;
+}
+@media (min-width: 48.0625rem) {
+  .grid-system--fluid {
+    grid-column: content;
+  }
 }
 
 /* Key Visual */
