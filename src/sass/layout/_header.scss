@@ -103,5 +103,9 @@
         @include breakpoint('md') {
             max-width: 24ch;
         }
+
+        @include breakpoint('md') {
+            max-width: 26ch;
+        }
     }
 }

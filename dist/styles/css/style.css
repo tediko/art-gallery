@@ -328,6 +328,11 @@ body {
     max-width: 24ch;
   }
 }
+@media (min-width: 48.0625rem) {
+  .header__desc {
+    max-width: 26ch;
+  }
+}
 
 /* Grid system */
 .grid-system {
