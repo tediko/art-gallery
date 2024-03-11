@@ -430,6 +430,11 @@ body {
   background-color: hsl(0, 0%, 8%);
   padding: 3rem 1.5rem;
 }
+@media (min-width: 64rem) {
+  .kv__content--bottom {
+    padding: 4.0625rem 3rem;
+  }
+}
 .kv__content--bottom .kv__desc {
   max-width: 29ch;
 }

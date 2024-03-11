@@ -85,6 +85,10 @@
             background-color: $c-black;
             padding: 3rem 1.5rem;
 
+            @include breakpoint('lg') {
+                padding: 4.0625rem 3rem
+            }
+
             #{$root}__desc {
                 max-width: 29ch;
             }
