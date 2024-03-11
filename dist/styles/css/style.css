@@ -439,9 +439,11 @@ body {
 /* Location */
 .location__map {
   height: 550px;
+  border: 3px dashed rgba(0, 0, 0, 0);
 }
-.location__map .leaflet-tile {
-  filter: grayscale(100);
+.location__map:focus-visible {
+  border: 3px dashed hsl(24, 56%, 63%);
+  outline: none;
 }
 @media (min-width: 48.0625rem) {
   .location__map {
@@ -450,6 +452,13 @@ body {
 }
 .location__map[data-state=no-js] {
   display: none;
+}
+.location__map-icon:focus-visible {
+  outline: 3px dashed hsl(24, 56%, 63%);
+  outline-offset: 3px;
+}
+.location__map-layer {
+  filter: grayscale(100);
 }
 .location__content {
   background-color: hsl(0, 0%, 8%);

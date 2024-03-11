@@ -4,9 +4,11 @@
 .location {
     &__map {
         height: 550px;
+        border: 3px dashed rgba(0, 0, 0, 0);
         
-        .leaflet-tile {
-            filter: grayscale(100);
+        &:focus-visible {
+            border: 3px dashed $c-yellow-sand;
+            outline: none;
         }
 
         @include breakpoint('md') {
@@ -15,6 +17,17 @@
 
         &[data-state="no-js"] { // Hidde map container when js has not loaded
             display: none;
+        }
+
+        &-icon { // class for leaflet icon marker
+            &:focus-visible {
+                outline: 3px dashed $c-yellow-sand;
+                outline-offset: 3px;
+            }
+        }
+
+        &-layer { // class for leaflet tile layer
+            filter: grayscale(100);
         }
     }
 
