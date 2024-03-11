@@ -68,6 +68,7 @@
         
                 @include breakpoint('lg') {
                     white-space: unset;
+                    max-width: 10ch;
                 }
             }
 

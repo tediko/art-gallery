@@ -415,6 +415,7 @@ body {
 @media (min-width: 64rem) {
   .kv__content--top .kv__title {
     white-space: unset;
+    max-width: 10ch;
   }
 }
 .kv__content--top .kv__desc {
