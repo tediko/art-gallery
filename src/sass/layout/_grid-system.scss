@@ -1,3 +1,6 @@
+@use '../utilities' as *;
+
+/* Grid system */
 .grid-system {
     $gap: clamp(1rem, -0.428rem + 6.091vw, 2.5rem);
     $full: minmax($gap, 1fr);
@@ -9,11 +12,19 @@
         [content-start] $content [content-end]
         $full [full-end];
 
-    & > *:not(&--full) {
+    & > *:not(&--full, &--fluid) {
         grid-column: content;
     }
 
     &--full {
         grid-column: full;
+    }
+
+    &--fluid {
+        grid-column: full;
+
+        @include breakpoint('md') {
+            grid-column: content;
+        }
     }
 }
