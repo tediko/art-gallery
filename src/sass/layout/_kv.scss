@@ -61,6 +61,10 @@
                 grid-area: 1 / 1
             }
 
+            @include breakpoint('lg') {
+                align-self: center;
+            }
+
             #{$root}__title {
                 @media (min-width: 40rem) {
                     max-width: 7ch;

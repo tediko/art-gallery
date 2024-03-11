@@ -407,6 +407,11 @@ body {
     grid-area: 1/1;
   }
 }
+@media (min-width: 64rem) {
+  .kv__content--top {
+    align-self: center;
+  }
+}
 @media (min-width: 40rem) {
   .kv__content--top .kv__title {
     max-width: 7ch;
