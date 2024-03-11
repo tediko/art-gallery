@@ -255,12 +255,12 @@ body {
 @media (min-width: 48.0625rem) {
   .header__container {
     display: grid;
-    grid-template: "image content"/1fr 1fr;
+    grid-template: "image content" 700px/1fr 1fr;
   }
 }
 @media (min-width: 75rem) {
   .header__container {
-    grid-template: "bg image content" 11.8125rem "bg image content" auto/287px 4fr 3fr;
+    grid-template: "bg image content" 11.8125rem "bg image content" calc(800px - 11.8125rem)/287px 4fr 3fr;
     max-width: 69.375rem;
     margin: 0 auto;
   }
@@ -276,6 +276,7 @@ body {
 @media (min-width: 48.0625rem) {
   .header__image {
     width: unset;
+    height: 100%;
   }
 }
 .header__content {

@@ -22,14 +22,19 @@
 
     &__container {
         @include breakpoint('md') {
+            $image-height: 700px;
+
             display: grid;
-            grid-template: "image content" / 1fr 1fr;
+            grid-template: "image content" #{$image-height} / 1fr 1fr;
         }
 
         @include breakpoint('xlg') {
+            $top-row: 11.8125rem;
+            $image-height: 800px;
+            
             grid-template: 
-            "bg image content" 11.8125rem
-            "bg image content" auto / 287px 4fr 3fr;
+            "bg image content" $top-row
+            "bg image content" calc($image-height - $top-row) / 287px 4fr 3fr;
             max-width: 69.375rem;
             margin: 0 auto;
         }
@@ -46,6 +51,7 @@
 
         @include breakpoint('md') {
             width: unset;
+            height: 100%;
         }
     }
 
