@@ -423,7 +423,7 @@ body {
 }
 @media (min-width: 48.0625rem) {
   .kv__content--top .kv__desc {
-    max-width: 22ch;
+    max-width: 23ch;
   }
 }
 .kv__content--bottom {
