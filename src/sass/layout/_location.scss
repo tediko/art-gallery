@@ -58,4 +58,12 @@
     &__address-desc {
         white-space: pre-wrap;
     }
+
+    &__desc {
+        max-width: 29.1875rem;
+
+        @include breakpoint('md') {
+            max-width: unset;
+        }
+    }
 }

@@ -483,6 +483,14 @@ body {
 .location__address-desc {
   white-space: pre-wrap;
 }
+.location__desc {
+  max-width: 29.1875rem;
+}
+@media (min-width: 48.0625rem) {
+  .location__desc {
+    max-width: unset;
+  }
+}
 
 /* Footer */
 .footer {
