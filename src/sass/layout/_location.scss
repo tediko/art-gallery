@@ -60,10 +60,6 @@
     }
 
     &__desc {
-        max-width: 29.1875rem;
-
-        @include breakpoint('md') {
-            max-width: unset;
-        }
+        max-width: 38ch;
     }
 }
