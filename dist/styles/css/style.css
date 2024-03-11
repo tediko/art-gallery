@@ -320,11 +320,11 @@ body {
   }
 }
 .header__desc {
-  max-width: 31.25rem;
+  max-width: 41ch;
 }
 @media (min-width: 48.0625rem) {
   .header__desc {
-    max-width: 21.875rem;
+    max-width: 24ch;
   }
 }
 
