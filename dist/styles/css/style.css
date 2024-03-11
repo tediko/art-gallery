@@ -581,7 +581,7 @@ body {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   padding-inline: 0.3125rem;
-  font-size: 1.45rem;
+  font-size: 1.35rem;
 }
 .footer__socials-link:focus-visible {
   outline: 3px dashed hsl(24, 56%, 63%);
