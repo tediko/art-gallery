@@ -5,12 +5,15 @@ import L from 'leaflet';
 // It won't display map container when js is not loaded.
 document.querySelector('#map').dataset.state = 'ready';
 
+// latitude and longitude of art gallery location
+const locationLatLng = [41.48041, -71.31091];
+
 // Instantiates a map object with options
 let map = L.map('map', {
-    center: ([41.48041, -71.31091]),
+    center: (locationLatLng),
     zoomControl: false,
     attributionControl: false
-}).setView([41.48041, -71.31091], 18);
+}).setView(locationLatLng, 18);
 
 // Creates an icon instance with the given options
 let locationIcon  = L.icon({
@@ -26,4 +29,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 // Instantiates a Marker object given a geographical point and icon as options object.
-L.marker([41.48041, -71.31091], {icon: locationIcon}).addTo(map);
+L.marker(locationLatLng, {icon: locationIcon}).addTo(map);
