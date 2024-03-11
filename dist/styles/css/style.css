@@ -261,7 +261,7 @@ body {
 @media (min-width: 75rem) {
   .header__container {
     grid-template: "bg image content" 11.8125rem "bg image content" auto/287px 4fr 3fr;
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
   }
 }
