@@ -2,10 +2,22 @@
 
 /* Header */
 .header {
-    margin-bottom: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
+    $root: &;
 
-    @include breakpoint('xlg') {
-        background: linear-gradient(to right, $c-black 0 50%, $c-white 50% 100%);
+    &--primary {
+        margin-bottom: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
+    
+        @include breakpoint('xlg') {
+            background: linear-gradient(to right, $c-black 0 50%, $c-white 50% 100%);
+        }
+    }
+
+    &--secondary {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
     }
 
     &__container {
