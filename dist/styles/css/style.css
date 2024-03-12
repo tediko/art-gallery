@@ -169,10 +169,6 @@ textarea:not([rows]) {
   transform: translateX(0);
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   min-height: 100vh;
   font-family: "Outfit", sans-serif;
