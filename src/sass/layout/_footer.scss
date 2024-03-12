@@ -8,6 +8,14 @@
     padding-block: clamp(3rem, 2.091rem + 3.879vw, 5rem);
     margin-top: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
 
+    &--animate {
+        @include breakpoint('md') {
+            @media (prefers-reduced-motion: no-preference) {
+                transform: translateY(100px);
+            }
+        }
+    }
+
     &--light {
         background-color: $c-yellow-sand;
         margin-top: 0;
