@@ -10,7 +10,9 @@
 
     // Add gsap animation styles only when js has loaded
     &[data-state="ready"] {
-        transform: translateY(100px);
+        @include breakpoint('md') {
+            transform: translateY(100px);
+        }
     }
 
     &--light {
