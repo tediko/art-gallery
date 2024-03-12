@@ -17,6 +17,7 @@ const initialLoad = () => {
 const animate = () => {
     let matchMedia = gsap.matchMedia();
     let mdBreakpoint = "(min-width: 48.0625rem)";
+    let lgBreakpoint = "(min-width: 75rem)";
 
     matchMedia.add(mdBreakpoint, () => {
         // Header title animation
@@ -61,7 +62,7 @@ const animate = () => {
                 scrub: 3,
                 markers: false
             },
-            y: 0, //tablet 60
+            y: 60,
             opacity: 1
         });
 
@@ -127,6 +128,20 @@ const animate = () => {
                 markers: false
             },
             y: 0
+        });
+    });
+
+    matchMedia.add(lgBreakpoint, () => {
+        // Kv top content animation
+        gsap.to(".kv__content--top", {
+            scrollTrigger: {
+                trigger: ".kv__content--top",
+                start: "150px bottom",
+                scrub: 3,
+                markers: false
+            },
+            y: 0,
+            opacity: 1
         });
     });
 }
