@@ -1,5 +1,9 @@
 @use '../utilities/' as *;
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     min-height: 100vh;
     font-family: $ff-primary;
