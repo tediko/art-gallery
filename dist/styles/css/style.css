@@ -374,26 +374,34 @@ body {
     grid-template-rows: 400px 313px 377px;
   }
 }
+.kv[data-state=ready] .kv__image-wrapper--1 {
+  opacity: 0;
+  transform: scale(0.85);
+}
+.kv[data-state=ready] .kv__image-wrapper--2 {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.kv[data-state=ready] .kv__image-wrapper--3 {
+  opacity: 0;
+  transform: translateX(40px);
+}
+.kv[data-state=ready] .kv__content--top {
+  opacity: 0;
+  transform: translateY(-60px);
+}
+.kv[data-state=ready] .kv__content--bottom {
+  opacity: 0;
+  transform: translateY(40px);
+}
 @media (min-width: 48.0625rem) {
   .kv__image-wrapper--1 {
     grid-area: 1/span 2;
   }
 }
-@media (min-width: 48.0625rem) and (prefers-reduced-motion: no-preference) {
-  .kv__image-wrapper--1 {
-    opacity: 0;
-    transform: scale(0.85);
-  }
-}
 @media (min-width: 48.0625rem) {
   .kv__image-wrapper--2 {
     grid-area: span 2/span 2/auto;
-  }
-}
-@media (min-width: 48.0625rem) and (prefers-reduced-motion: no-preference) {
-  .kv__image-wrapper--2 {
-    opacity: 0;
-    transform: translateY(40px);
   }
 }
 @media (min-width: 40rem) {
@@ -404,12 +412,6 @@ body {
 @media (min-width: 48.0625rem) {
   .kv__image-wrapper--3 {
     grid-area: 2/3;
-  }
-}
-@media (min-width: 48.0625rem) and (prefers-reduced-motion: no-preference) {
-  .kv__image-wrapper--3 {
-    opacity: 0;
-    transform: translateX(40px);
   }
 }
 @media (min-width: 40rem) {
@@ -431,12 +433,6 @@ body {
   .kv__content--top {
     padding: 0;
     grid-area: 1/1;
-  }
-}
-@media (min-width: 48.0625rem) and (prefers-reduced-motion: no-preference) {
-  .kv__content--top {
-    opacity: 0;
-    transform: translateY(-60px);
   }
 }
 @media (min-width: 64rem) {
@@ -466,12 +462,6 @@ body {
 .kv__content--bottom {
   background-color: hsl(0, 0%, 8%);
   padding: 3rem 1.5rem;
-}
-@media (min-width: 48.0625rem) and (prefers-reduced-motion: no-preference) {
-  .kv__content--bottom {
-    opacity: 0;
-    transform: translateY(40px);
-  }
 }
 @media (min-width: 64rem) {
   .kv__content--bottom {
@@ -557,10 +547,8 @@ body {
   padding-block: clamp(3rem, 2.091rem + 3.879vw, 5rem);
   margin-top: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
 }
-@media (min-width: 48.0625rem) and (prefers-reduced-motion: no-preference) {
-  .footer--animate {
-    transform: translateY(100px);
-  }
+.footer[data-state=ready] {
+  transform: translateY(100px);
 }
 .footer--light {
   background-color: hsl(24, 56%, 63%);
