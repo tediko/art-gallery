@@ -173,6 +173,7 @@ body {
   min-height: 100vh;
   font-family: "Outfit", sans-serif;
   background-color: hsl(0, 0%, 100%);
+  overflow-x: hidden;
 }
 
 /* Components */
