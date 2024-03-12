@@ -16,27 +16,44 @@
         grid-template-rows: 400px 313px 377px;
     }
 
+    // Add gsap animation styles only when js has loaded
+    &[data-state="ready"] {
+        #{$root}__image-wrapper--1 {
+            opacity: 0;
+            transform: scale(0.85);
+        }
+
+        #{$root}__image-wrapper--2 {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        #{$root}__image-wrapper--3 {
+            opacity: 0;
+            transform: translateX(40px);
+        }
+
+        #{$root}__content--top {
+            opacity: 0;
+            transform: translateY(-60px);
+        }
+
+        #{$root}__content--bottom {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+    }
+
     &__image-wrapper {
         &--1 {
             @include breakpoint('md') {
                 grid-area: 1 / span 2;
-
-                @media (prefers-reduced-motion: no-preference) {
-                    opacity: 0;
-                    transform: scale(0.85);
-                }
             }
         }
 
         &--2 {
             @include breakpoint('md') {
                 grid-area: span 2 / span 2 / auto;
-
-                @media (prefers-reduced-motion: no-preference) {
-                    opacity: 0;
-                    transform: translateY(40px);
-                }
-
             }
         }
 
@@ -47,11 +64,6 @@
 
             @include breakpoint('md') {
                 grid-area: 2 / 3;
-
-                @media (prefers-reduced-motion: no-preference) {
-                    opacity: 0;
-                    transform: translateX(40px);
-                }
             }
         }
     }
@@ -75,13 +87,6 @@
             @media (min-width: 40rem) {
                 padding: 0;
                 grid-area: 1 / 1
-            }
-
-            @include breakpoint('md') {
-                @media (prefers-reduced-motion: no-preference) {
-                    opacity: 0;
-                    transform: translateY(-60px);
-                }
             }
 
             @include breakpoint('lg') {
@@ -111,13 +116,6 @@
         &--bottom {
             background-color: $c-black;
             padding: 3rem 1.5rem;
-
-            @include breakpoint('md') {
-                @media (prefers-reduced-motion: no-preference) {
-                    opacity: 0;
-                    transform: translateY(40px);
-                }
-            }
 
             @include breakpoint('lg') {
                 padding: 4.0625rem 3rem

@@ -8,12 +8,9 @@
     padding-block: clamp(3rem, 2.091rem + 3.879vw, 5rem);
     margin-top: clamp(3.75rem, 0.405rem + 6.961vw, 5.625rem);
 
-    &--animate {
-        @include breakpoint('md') {
-            @media (prefers-reduced-motion: no-preference) {
-                transform: translateY(100px);
-            }
-        }
+    // Add gsap animation styles only when js has loaded
+    &[data-state="ready"] {
+        transform: translateY(100px);
     }
 
     &--light {
