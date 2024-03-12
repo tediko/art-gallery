@@ -6,9 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 // Checks whether the user has reduced motion set.
 // If so, the animations will not be displayed.
 const initialLoad = () => {
+    const elementsToAnimate = document.querySelectorAll('[data-state]');
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`).matches; 
     if (isReduced) return;
 
+    // data-state="ready" is used in CSS to add pre-animation styles
+    // when user has not set prefers-reduced-motion to reduce.
+    elementsToAnimate.forEach(element => {
+        element.dataset.state = 'ready';
+    })
     animate();
 }
 
