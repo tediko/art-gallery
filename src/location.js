@@ -1,3 +1,7 @@
+import './sass/main.scss';
+import 'leaflet/dist/leaflet.css';
+import iconLocation from '/shared/icon-location.svg';
+
 // Leaflet map
 import L from 'leaflet';
 
@@ -21,7 +25,7 @@ let map = L.map('map', {
 
 // Creates an icon instance with the given options
 let locationIcon  = L.icon({
-    iconUrl: './assets/shared/icon-location.svg',
+    iconUrl: iconLocation,
     iconSize: [66,88],
     iconAnchor: [33,88],
     className: iconClassName
