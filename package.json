@@ -4,17 +4,17 @@
   "description": "Art gallery website challenge",
   "main": "index.js",
   "scripts": {
-    "sass-watch": "sass --watch src/sass/main.scss dist/styles/css/style.css",
-    "build": "webpack"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "tediko",
   "license": "ISC",
-  "devDependencies": {
-    "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4"
-  },
   "dependencies": {
     "gsap": "^3.12.5",
     "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "vite": "^5.1.6"
   }
 }
