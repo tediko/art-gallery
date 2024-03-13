@@ -58,7 +58,7 @@
 
         &::before {
             left: 0;
-            background-image: url('../../assets/shared/icon-arrow-left.svg');
+            background-image: url('/shared/icon-arrow-left.svg');
         }
     }
     
@@ -67,7 +67,7 @@
 
         &::before {
             right: 0;
-            background-image: url('../../assets/shared/icon-arrow-right.svg');
+            background-image: url('/shared/icon-arrow-right.svg');
         }
     }
 }

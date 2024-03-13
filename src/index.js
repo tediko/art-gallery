@@ -1,3 +1,5 @@
+import './sass/main.scss';
+
 // GSAP ANIMATIONS
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

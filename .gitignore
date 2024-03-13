@@ -15,5 +15,6 @@
 .DS_Store
 .prettierignore
 
-# Avoid accidental node_modules upload
-/node_modules
+# Avoid accidental upload
+node_modules/
+dist/

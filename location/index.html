@@ -7,10 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/css/style.css">
   <script src="https://kit.fontawesome.com/b961f1cbcd.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <title>Art gallery | Location</title>
 </head>
 <body>
@@ -21,7 +19,7 @@
   <!-- Header -->
   <header class="header header--secondary grid-system">
     <nav class="header__nav grid-system--fluid" aria-label="main">
-      <a href="index.html" class="button button--left">Back to home</a>
+      <a href="/index.html" class="button button--left">Back to home</a>
     </nav>
   </header>
 
@@ -51,7 +49,7 @@
     <footer class="footer footer--light grid-system--full grid-system">
       <div class="footer__container">
         <a href="#" class="footer__logo-link" aria-label="Modern Art Gallery - Location">
-          <img class="footer__logo" src="./assets/shared/logo-dark.svg" alt="">
+          <img class="footer__logo" src="/shared/logo-dark.svg" alt="">
         </a>
         <p class="footer__info text text text--s text--black">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
         <ul class="footer__socials-list">
@@ -76,6 +74,6 @@
 
   </div>
 
-  <script src="./location.js"></script>
+  <script type="module" src="../src/location.js"></script>
 </body>
 </html>
