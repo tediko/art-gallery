@@ -1,6 +1,6 @@
 # Art gallery website
 
-I found many challenges in this project, such as creating a *two-page website*, using external *Leaflet* library to display the map or trying *GSAP* library to make scroll animations (this project turned out to be a great place to do it!). By using the *Leaflet* and *GSAP* libraries, I had to learn and use *Webpack* to bundle my JavaScript files. 
+I found many challenges in this project, such as creating a *two-page website*, using external *Leaflet* library to display the map or trying *GSAP* library to make scroll animations (this project turned out to be a great place to do it!). By using the *Leaflet* and *GSAP* libraries, I had to learn and use *Webpack* to bundle my JavaScript files, which later on was switchwed to **Vite**.
 
 - Live Site URL: [design-portfolio-tediko.netlify.app](https://art-gallery-tediko.netlify.app/)
 
@@ -15,6 +15,8 @@ I found many challenges in this project, such as creating a *two-page website*, 
 
 ## My process
 
+Originally I created the project using **Webpack** to bundle my JavaScript files. But while reading more about diffrent bundlers or tools I wanted to check what the working process with other ones looks like. I switched *Webpack* with **Vite** (you can check [#1](https://github.com/tediko/art-gallery/pull/1) PR in github). Surprisingly there weren't many problems when changing. The Vite is simple to configure, which is minimal.
+
 Instead of adding a container to each section that limits our content to a certain width and positions it in the middle of the screen, leaving us the option for the parent element to still have the value of the entire width of the page if we wanted to add a background or photo, I used **CSS layout grid breakouts**, which gets rid of redundant unnecessary containers by defining the grid and its columns template for main grid-container. 
 
 ScrollTrigger animations using **GSAP** are disabled for users who have set `prefers-reduced-motion`.     Additionally, I created a fallback if javascript was not loaded so that the "initial settings" of the animation would not be loaded. Animations are disabled on mobile devices. A similar fallback has been added for the **Leaflet** `#map` container. If javascript does not load, the container will not be displayed at all so as not to leave empty space on the page.
@@ -26,6 +28,7 @@ I added **skip-to-content** links, even though they weren't really needed in thi
 -   [GSAP library](https://gsap.com/docs/v3/) - **GSAP** is a JavaScript library for building high-performance animations that work in every major browser.
 - [Leaflet library](https://leafletjs.com/) - **Leaflet** is the leading open-source JavaScript library for mobile-friendly interactive maps.
 - [Font Awesome](https://fontawesome.com/) - **Font Awesome** is the icon library and toolkit.
+- [Vite](https://vitejs.dev/) - **Vite** is a build tool that aims to provide a faster and leaner development experience for modern web projects. It consists of two major parts: a *dev server*, and *build command* that bundles your code with *Rollup*.
 - [Webpack](https://webpack.js.org/) - **Webpack** is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 - [CSS layout grid breakouts](https://ryanmulligan.dev/blog/layout-breakouts/) - Page layout structure using CSS Grid to get rid of redundant unnecessary containers.
 - [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) - The **`prefers-reduced-motion`**  is used to detect if a user has enabled a setting on their device to minimize the amount of non-essential motion. The setting is used to convey to the browser on the device that the user prefers an interface that removes, reduces, or replaces motion-based animations.
