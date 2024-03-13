@@ -1,6 +1,6 @@
 # Art gallery website
 
-I found many challenges in this project, such as creating a *two-page website*, using external *Leaflet* library to display the map or trying *GSAP* library to make scroll animations (this project turned out to be a great place to do it!). By using the *Leaflet* and *GSAP* libraries, I had to learn and use *Webpack* to bundle my JavaScript files, which later on was switchwed to **Vite**.
+I found many challenges in this project, such as creating a *two-page website*, using external *Leaflet* library to display the map or trying *GSAP* library to make scroll animations (this project turned out to be a great place to do it!). By using the *Leaflet* and *GSAP* libraries, I had to learn and use *Webpack* to bundle my JavaScript files. Webpack was later on switched to **Vite**.
 
 - Live Site URL: [design-portfolio-tediko.netlify.app](https://art-gallery-tediko.netlify.app/)
 
