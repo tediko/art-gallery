@@ -16,5 +16,5 @@
 .prettierignore
 
 # Avoid accidental upload
-/node_modules
+node_modules/
 dist/
