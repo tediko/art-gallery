@@ -15,6 +15,7 @@
     "leaflet": "^1.9.4"
   },
   "devDependencies": {
+    "sass": "^1.71.1",
     "vite": "^5.1.6"
   }
 }
