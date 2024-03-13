@@ -17,4 +17,4 @@
 
 # Avoid accidental upload
 /node_modules
-/dist
+dist/
