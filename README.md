@@ -9,6 +9,7 @@ I found many challenges in this project, such as creating a *two-page website*, 
 - [My process](#my-process)
   - [What I learned](#what-i-learned)
   - [Built with](#built-with)
+- [Setup](#setup)
 - [Overview](#overview)
   - [Screenshot](#screenshot)
 - [Author](#author)
@@ -41,6 +42,21 @@ I added **skip-to-content** links, even though they weren't really needed in thi
 -   Reduced browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on by using [CSS Reset by Andy Bell](https://piccalil.li/blog/a-more-modern-css-reset/)
 -   [BEM - Block, Element, Modifier](https://getbem.com/) methodology, which is a popular naming convention for classes in HTML and CSS. BEM is useful when it comes to larger, more complex projects when code organization becomes crucial. The idea behind it is to speed up the development process, and ease the teamwork of developers by arranging CSS classes into independent modules.
 - [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/). Grid is a powerful tool for creating two-dimensional layouts on the web.
+
+## Setup
+To run this project, clone it and install it locally:
+
+```
+$ git git@github.com:tediko/art-gallery.git
+$ cd art-gallery
+$ npm install
+```
+
+Start dev server and watch assets for changes:
+
+```
+$ npm run dev
+```
 
 ## Overview
 
