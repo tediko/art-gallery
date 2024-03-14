@@ -58,6 +58,12 @@ Start dev server and watch assets for changes:
 $ npm run dev
 ```
 
+(optional) Start a local web server and locally preview the production build:
+
+```
+$ npm run preview
+```
+
 ## Overview
 
 ### Screenshot
