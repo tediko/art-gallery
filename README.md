@@ -47,7 +47,7 @@ I added **skip-to-content** links, even though they weren't really needed in thi
 To run this project, clone the repository and install it locally:
 
 ```
-$ git git@github.com:tediko/art-gallery.git
+$ git clone git@github.com:tediko/art-gallery.git
 $ cd art-gallery
 $ npm install
 ```
