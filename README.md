@@ -44,7 +44,7 @@ I added **skip-to-content** links, even though they weren't really needed in thi
 - [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/). Grid is a powerful tool for creating two-dimensional layouts on the web.
 
 ## Setup
-To run this project, clone it and install it locally:
+To run this project, clone the repository and install it locally:
 
 ```
 $ git git@github.com:tediko/art-gallery.git
