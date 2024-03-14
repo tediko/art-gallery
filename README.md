@@ -68,7 +68,7 @@ $ npm run preview
 
 ### Screenshot
 
-![Design preview for the Single-page design portfolio ](./preview.jpg)
+![Design preview for the Single-page design portfolio ](./public/preview.jpg)
 
 ## Author
 
